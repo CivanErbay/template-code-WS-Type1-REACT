@@ -35,3 +35,10 @@
     transform: rotate(360deg);
   }
 }
+.breakpoint-test {
+  font-size: 20px;
+
+  @include lg {
+    font-size: 32px;
+  }
+}

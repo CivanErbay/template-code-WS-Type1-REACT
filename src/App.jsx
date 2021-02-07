@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p class="breakpoint-test">
           Page has been open for <code>{count}</code> second.
         </p>
       </header>
