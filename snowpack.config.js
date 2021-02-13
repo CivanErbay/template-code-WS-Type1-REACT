@@ -1,26 +1,7 @@
-/** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    // directory name: 'build directory'
-    public: "/",
-    src: "/dist",
+    public: { url: "/", static: true },
+    src: { url: "/dist" },
   },
-  plugins: ["@snowpack/plugin-react-refresh", "@snowpack/plugin-sass"],
-  routes: [
-    /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
-  ],
-  optimize: {
-    /* Example: Bundle your final build: */
-    // "bundle": true,
-  },
-  packageOptions: {
-    /* ... */
-  },
-  devOptions: {
-    /* ... */
-  },
-  buildOptions: {
-    /* ... */
-  },
+  plugins: [["@snowpack/plugin-build-script", { cmd: "postcss", input: [".css"], output: [".css"] }]],
 };
