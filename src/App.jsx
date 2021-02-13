@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
+import "/scss/main.scss"
 import logo from "./logo.svg";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p class="breakpoint-test">
+        <p>
           Page has been open for <code>{count}</code> second.
         </p>
       </header>
