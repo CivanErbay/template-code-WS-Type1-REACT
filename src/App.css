@@ -13,3 +13,9 @@
   width: 100%;
   background-color: aliceblue;
 }
+/* 
+@screen md {
+   h2 {
+     font-size: 3rem;
+   }
+} */

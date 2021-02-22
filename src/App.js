@@ -1,19 +1,19 @@
 import "./App.css";
 import { useScrollTrigger } from "./useScrollTrigger";
+import React from "react";
+import Landing from "./components/Landing/Landing";
 
 function App() {
   const { pageIndex, currentPageScrollY } = useScrollTrigger();
 
   console.log({ pageIndex, currentPageScrollY });
 
-  pageRenderSwitch = () => {
+  const pageRenderSwitch = () => {
     switch (pageIndex) {
       case 0:
-        // return top page
-        break;
-
+        return <Landing />;
       default:
-        break;
+        <Landing />;
     }
   };
 
